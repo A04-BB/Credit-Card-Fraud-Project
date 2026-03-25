@@ -30,7 +30,7 @@ if uploaded_file is not None:
 
     X = df.drop(columns=['Class', 'Amount', 'Time'], errors='ignore')
 
-    
+
     fraud_probs = rf.predict_proba(X)[:, 1]
 
   
